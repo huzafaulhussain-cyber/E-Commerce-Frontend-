@@ -21,7 +21,7 @@ import Products from './components/Products';
 import Customers from './components/Customers';
 import Orders from './components/Orders';
 import AddProduct from './components/AddProduct';
-import AddBanner from './components/addBanner';
+import AddBanner from './components/AddBanner';
 import CustomerDetails from './components/CustomerDetails';
 import SubscribersList from './components/SubscribersList';
 import SendPromotion from './components/SendPromotion';
