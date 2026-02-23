@@ -14,6 +14,7 @@ import RegisterForm from '../Auth/RegisterForm'
 import Services from '../components/Services/Services.jsx';
 import Contact from '../components/Contact/Contact.jsx';
 import Portfolio from '../components/Portfolio/Portfolio.jsx';
+import Catalogue from '../components/Catalogue/Catalogue.jsx';
  
 const CustomerRouters = () => {
     return (
@@ -37,6 +38,7 @@ const CustomerRouters = () => {
                     <Route path='/services' element={<Services />} />
                     <Route path='/contact' element={<Contact />} />
                      <Route path='/portfolio' element={<Portfolio />} />
+                     <Route path='/catalogue' element={<Catalogue />} />
 
                     
                 </Routes>

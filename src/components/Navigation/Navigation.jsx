@@ -126,6 +126,9 @@ export default function Navigation() {
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
+                    <Link to="/catalogue" className="-m-2 block p-2 font-medium text-gray-900">Catalogue</Link>
+                  </div>
+                  <div className="flow-root">
                     <Link to="/services" className="-m-2 block p-2 font-medium text-gray-900">Services</Link>
                   </div>
                   <div className="flow-root">
@@ -282,6 +285,10 @@ export default function Navigation() {
                     </div>
                   ))}
 
+                  <Link to="/catalogue" className="group relative flex items-center text-base text-slate-700 hover:text-[#248041] transition-colors uppercase">
+                    Catalogue
+                    <span className="absolute bottom-6 left-0 w-0 h-0.5 bg-[#248041] transition-all duration-300 group-hover:w-full"></span>
+                  </Link>
                   <Link to="/services" className="group relative flex items-center text-base text-slate-700 hover:text-[#248041] transition-colors uppercase">
                     Services
                     <span className="absolute bottom-6 left-0 w-0 h-0.5 bg-[#248041] transition-all duration-300 group-hover:w-full"></span>

@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, Send } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 export default function Footer() {
@@ -111,8 +112,8 @@ export default function Footer() {
                   { name: 'Contact', path: '/contact' },
                 ].map((link) => (
                   <li key={link.name}>
-                    <a
-                      href={link.path}
+                    <Link
+                      to={link.path}
                       className="group relative text-gray-400 hover:text-white transition-colors duration-300 text-sm inline-block pb-1"
                     >
                       {link.name}
@@ -121,7 +122,7 @@ export default function Footer() {
                         className="absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full"
                         style={buttonGradient}
                       ></span>
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
