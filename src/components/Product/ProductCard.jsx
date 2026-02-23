@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { Star, ShoppingCart } from 'lucide-react';
-import { addItemToCart } from '../../State/cart/Action';
+import { addItemToCart } from '../../State/Cart/Action';
 import { api } from '../../config/apiConfig';
 
 const ProductCard = ({ product }) => {
