@@ -8,7 +8,7 @@ import ProductdetailReviwe from './ProductdetailReviwe';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { findProductsById } from '../../State/product/Action';
-import { addItemToCart } from '../../State/cart/Action';
+import { addItemToCart } from '../../State/Cart/Action';
 import { getAllReviews } from '../../State/review/Action'; // 👈 YE IMPORT KARO
 
 const product = {
