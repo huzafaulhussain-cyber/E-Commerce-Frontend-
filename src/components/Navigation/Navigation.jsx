@@ -136,6 +136,37 @@ export default function Navigation() {
                   </div>
                 </div>
 
+                {auth.user && (
+                  <div className="border-t border-gray-200 px-4 py-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Avatar sx={{ bgcolor: '#248041', width: 32, height: 32 }}>
+                        {auth.user.firstName[0].toUpperCase()}
+                      </Avatar>
+                      <span className="font-medium text-gray-900">
+                        {auth.user.firstName}
+                      </span>
+                    </div>
+                    <div className="space-y-6">
+                      <div className="flow-root">
+                        <p
+                          onClick={() => { navigate("/account/order"); setOpen(false); }}
+                          className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer"
+                        >
+                          My Orders
+                        </p>
+                      </div>
+                      <div className="flow-root">
+                        <p
+                          onClick={() => { handleLogout(); setOpen(false); }}
+                          className="-m-2 block p-2 font-medium text-red-600 cursor-pointer"
+                        >
+                          Logout
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 {!auth.user && (
                   <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                     <div className="flow-root">
