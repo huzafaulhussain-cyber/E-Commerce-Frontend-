@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
-  Button, Grid, Typography, CircularProgress,
-  Box, Snackbar, Alert, Paper, IconButton, Divider
+  Button, Grid, Typography, CircularProgress, Box,
+  Snackbar, Alert, Paper, IconButton, Divider, Avatar
 } from '@mui/material';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -234,15 +234,5 @@ const AddBanner = () => {
     </Box>
   );
 };
-
-// Help helper for Avatar import missing
-const Avatar = ({ children, sx }) => (
-  <Box sx={{
-    display: 'flex', alignItems: 'center', justifyContent: 'center',
-    borderRadius: '12px', ...sx
-  }}>
-    {children}
-  </Box>
-);
 
 export default AddBanner;
